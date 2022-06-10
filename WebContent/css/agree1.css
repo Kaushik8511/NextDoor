@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f8f8f8;
+}
+
+
+.agree {
+	background-color: white;
+	width: 70%;
+	margin: 5rem auto;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	border-radius: 1rem;
+	text-align: left;
+    padding: 3rem;
+	overflow:scroll;	
+	height: 900px;
+	 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+   
+	
+   
+}
+
+#print
+{
+	  background-color:lightblue;
+	  width:100px;
+	  
+	  
+}
+
+#watermark
+{
+	position:fixed;
+	top:600px;
+	left:200px;
+	font-size:120px;
+	opacity:0.5;
+	z-index:99;
+	width:400px;
+	transform-origin: 0 0;
+	transform:rotate(-45deg);
+	
+	color:white;
+	visibility:hidden;
+}
+
+#div1
+{
+      background-color:rgb(230, 228, 228);
+      width: 1370px;
+      height:60px;
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      top:0px;
+      left:0px;
+      padding-top: 0px;
+}
+
+
+@media print
+{
+	.agree
+	{
+	      overflow:visible;
+	      box-shadow:none;
+	      
+	   	}
+	   	
+	   	img
+	   	{
+	   	 position:relative;
+	   	 left:-200px;
+	   	 top:0px;
+	   	}
+	   	
+	   	#watermark
+	   	{
+	   	 visibility:visible;
+	   	}
+	   	
+	   	#print
+	   	{
+	   	visibility:hidden;
+	   	}
+	   	
+	   	mark
+	   	{
+	   	   visibility:visible;
+	   	   background-color:yellow;
+	   	}
+	   	
+	   	#div1
+	   	{
+	   	visibility:hidden;
+	   	}
+	   }
+
+#imgsrc {
+	width: 340px;
+	height: 146px;
+	margin-left: 270px;
+	border-radius: 10px;
+
+}
+
+p {
+	line-height: 1.5;
+	
+}

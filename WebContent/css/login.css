@@ -1,0 +1,201 @@
+
+#div1
+{
+      background-color:rgb(230, 228, 228);
+      width: 1349px;
+      height:60px;
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      top:0px;
+      left:0px;
+      padding-top: 0px;
+}
+body {font-family: Verdana, sans-serif;}
+
+#img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100px;
+    height: 58px;
+    border-style: solid;
+    border-width: 0.3px;
+    
+    
+}
+ul
+{
+    list-style-type: none;
+    margin-left: 100px;
+    margin-top:10px;
+    overflow: hidden;
+  
+}
+
+#li1
+{
+    position:absolute; 
+    left:1000px;
+    top:15px; 
+    border-color: brown;
+    
+    border-width:1px;
+     border-style: solid;
+}
+
+a:link
+{
+     text-decoration: none;
+}
+
+a
+{
+    color:black;
+}
+
+li:hover {
+    background-color: darkgray;
+}
+
+
+#id2{
+
+    float:left;
+    margin-right:15px;
+    height:60px;
+    margin-top: 0px;
+   position:absolute;
+   top:0px;
+   left:120px;
+   padding-top: 15px;
+}
+#id3{
+
+    float:left;
+    margin-right:15px;
+    height:60px;
+    margin-top: 0px;
+   position:absolute;
+   top:0px;
+   left:200px;
+   padding-top: 15px;
+
+}
+#id4{
+
+    float:left;
+    margin-right:15px;
+    height:60px;
+    margin-top: 0px;
+   position:absolute;
+   top:0px;
+   left:380px;
+   padding-top: 15px;
+
+   
+}
+#id5{
+
+    float:left;
+    margin-right:15px;
+    height:60px;
+    margin-top: 0px;
+   position:absolute;
+   top:0px;
+   left:720px;
+   padding-top: 15px;
+
+}
+#id6{
+
+    float:left;
+    margin-right:15px;
+    height:60px;
+    margin-top: 0px;
+   position:absolute;
+   top:0px;
+   left:830px;
+   padding-top: 15px;
+
+}
+
+#id71{
+
+    float:left;
+    margin-right:15px;
+    height:60px;
+    margin-top: 0px;
+   position:absolute;
+   top:0px;
+   left:570px;
+   padding-top: 15px;
+
+}
+
+.main1
+{
+     background-color: lightgray;
+     padding-left:200px;
+     padding-top: 100px;
+     height:1200px;
+     position:absolute;
+     top: 60px;
+     left:0px;
+     width:1150px;
+}
+
+fieldset
+{
+    background-color:rgb(233, 229, 229); 
+    border-radius: 10px; 
+    width:700px; 
+    height:500px;
+    padding: 50px; 
+}
+
+#img1{
+    width: 250px;
+    height: 350px;
+    position:absolute;
+    left:750px;
+    top:300px;
+    border-radius: 10px;
+}
+ input[type="password"],input[type="email"],input[type="text"]
+ {
+         border-radius: 5px;
+         border:none;
+         width:300px;
+         border:solid;
+         border-width: 1px;
+ }
+
+ input[type="submit"]
+ {
+       background-color: blue;
+       width:10%;
+       color:white;
+       border-radius: 5px;
+       border:none;
+       height:7%;
+ }
+
+ input[type="submit"]:hover{
+        
+       width:11%;
+       height:8%;
+ }
+.main2
+{
+     background-color: lightgray;
+    margin-top:50px;
+    
+    border-radius: 10px;
+    margin-left:10px;
+    width:700px;
+     padding: 50px;
+    border-color: black;
+    
+    
+}

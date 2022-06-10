@@ -1,0 +1,46 @@
+.oops {
+	margin-left: 350px;
+	margin-top: 200px;
+}
+.img-oops {
+	margin-bottom:0;
+} 
+
+.oops-head {
+	margin-top:0;
+}
+
+.feed {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	border: 2px solid powderblue;
+	border-top: none;
+	 border-left: none;
+	 border-right:none;
+}
+
+.feed-head {
+	font-size: 2.5rem;
+	font-style: bolder;
+}
+
+.feed-desc {
+	line-height: 1.5;
+	
+	
+}
+
+.remove {
+	padding: 5px;
+	background-color: powderblue;
+	border:none;
+	border-radius: 5px;
+	margin-bottom: 0;
+}
+
+.remove:hover {
+	padding: 7px;
+	background-color: skyblue;
+}

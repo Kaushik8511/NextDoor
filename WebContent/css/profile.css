@@ -1,0 +1,54 @@
+body {
+	margin:0;
+	padding:0;
+	background-color: #f8f8f8;
+}
+
+section {
+	
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	margin-bottom: 3rem;
+}
+
+.title {
+	font-size: 2rem;
+	margin-bottom: 5px;
+}
+.name {
+	margin-bottom: 0;
+}
+
+.email {
+	margin-top: 0;
+	margin-bottom:0;
+}
+
+
+.property-list {
+	clear:both;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	
+}
+
+.propery-content {
+	float: left;
+	margin-right: 2rem;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	border-radius: 1rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	color:black;
+}
+
+.home-images {
+	width: 200px;
+	height: 200px;
+}
+
+.clear-float {
+	clear: both;
+}

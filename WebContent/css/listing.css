@@ -1,0 +1,281 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+	/*background-color: #f8f8f8;*/
+}
+
+.ast {
+	color: red;
+}
+
+/*main form container*/
+.main-container {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3rem;
+	width: 70%;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	border-radius: 1rem;
+	background-color: white;
+}
+
+
+
+
+.details{
+	margin-left: 13rem;
+	margin-top: 2rem;
+}
+/*header of form*/
+.head-box {
+    border-radius: 4px 4px 0 0;
+    border: solid 1px #d6d6d6;
+    background-color: #e6e6e6 !important;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100px;
+    height: 58px;
+    border-style: solid;
+    border-width: 0.3px;
+    
+    
+}
+ul
+{
+    list-style-type: none;
+    margin-left: 100px;
+    margin-top:10px;
+    overflow: hidden;
+  
+}
+
+#li1
+{
+    position:absolute; 
+    left:1000px;
+    top:15px; 
+    border-color: brown;
+    
+    border-width:1px;
+     border-style: solid;
+}
+
+a:link
+{
+     text-decoration: none;
+}
+
+a
+{
+    color:black;
+}
+
+li:hover {
+    background-color: darkgray;
+}
+
+
+#id2{
+
+    float:left;
+    margin-right:15px;
+    height:60px;
+    margin-top: 0px;
+   position:absolute;
+   top:0px;
+   left:120px;
+   padding-top: 15px;
+}
+#id3{
+
+    float:left;
+    margin-right:15px;
+    height:60px;
+    margin-top: 0px;
+   position:absolute;
+   top:0px;
+   left:200px;
+   padding-top: 15px;
+
+}
+#id4{
+
+    float:left;
+    margin-right:15px;
+    height:60px;
+    margin-top: 0px;
+   position:absolute;
+   top:0px;
+   left:380px;
+   padding-top: 15px;
+
+   
+}
+#id5{
+
+    float:left;
+    margin-right:15px;
+    height:60px;
+    margin-top: 0px;
+   position:absolute;
+   top:0px;
+   left:720px;
+   padding-top: 15px;
+
+}
+#id6{
+
+    float:left;
+    margin-right:15px;
+    height:60px;
+    margin-top: 0px;
+   position:absolute;
+   top:0px;
+   left:830px;
+   padding-top: 15px;
+
+}
+
+#id71{
+
+    float:left;
+    margin-right:15px;
+    height:60px;
+    margin-top: 0px;
+   position:absolute;
+   top:0px;
+   left:570px;
+   padding-top: 15px;
+
+}
+body {font-family: Verdana, sans-serif;}
+
+#div1
+{
+      background-color:rgb(230, 228, 228);
+      width: 1349px;
+      height:60px;
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      top:0px;
+      left:0px;
+      padding-top: 0px;
+}
+
+.head-box h2 {
+	margin: 0 auto;
+	font-size: 1.5rem;
+}
+
+/*form content*/
+.form-body {
+    border-radius: 4px !important;
+    border: 1px solid #d6d6d6 !important;
+    padding: 1rem;
+}
+
+.type {
+	margin-bottom: 1rem;
+}
+
+.form-label {
+	margin-bottom: 0.7rem;
+	font-size: 1rem;
+}
+
+.form-input {
+	width: 100%;
+}
+
+input[type="text"], input[type="number"], input[type="date"], select {
+    background: #FAFAFA !important;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.23) !important;
+    background-color: #fafafa !important;
+    border: solid 1px #c9c9c9 !important;
+    width: 100%;
+    padding: 0 0.5rem 0 0.2rem;
+  
+    font-size: 1.3rem;
+}
+
+/*images*/
+
+.uploadBox:hover {
+    background-color: #c5cacf;
+}
+
+.file-input label {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(40deg, #ff6ec4, #7873f5);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+  margin: 1rem auto;
+}
+
+.file1 {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  visibility:hidden;
+  position: absolute;
+}
+
+.file2 {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  visibility:hidden;
+
+  position: absolute;
+}
+.file3 {
+  opacity: 0;
+  width: 0.1px;
+  visibility:hidden;
+
+  height: 0.1px;
+  position: absolute;
+}
+
+.uploadBox {
+    width: 100%;
+    border: 2px #66707a dashed;
+    background-color: #ddd;
+    clear: both;
+    vertical-align: middle;
+    text-align: center;
+    min-height: 140px;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/*clearing number decoration (arrows)*/
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
