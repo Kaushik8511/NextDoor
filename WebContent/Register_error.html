@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+     <!--  <script src="app.js"> </script> -->
+     <script>
+         var val;
+        function myfun()
+        {
+            
+                
+                 var s=document.getElementById("mno");
+                  if(!s.checkValidity())
+                  {
+                      document.getElementById("mno").style.borderColor="red";
+                  }
+                  s=document.getElementById("email");
+                  if(!s.checkValidity())
+                  {
+                         document.getElementById("email").style.borderColor="red";
+                  }
+                  s=document.getElementById("pword");
+                  if(!s.checkValidity())
+                  {
+                        document.getElementById("pword").style.borderColor="red";
+                  }
+                     
+                  s=document.getElementById("name");
+                  if(!s.checkValidity())
+                  {
+                        document.getElementById("name").style.borderColor="red";
+                  }
+    
+            var e=document.getElementById("email").value;
+            var name=document.getElementById("name").value;
+            send_email(e,name);
+           // document.getElementById("otpver").style.visibility="visible";
+  
+            
+
+           }
+    
+  /*          function verify()
+            {
+                  var a=parseInt(document.getElementById("otp").value);
+                      console.log(val);   
+                 
+                  if(val==a)
+                  {
+                    document.getElementById("label").style.visibility="visible";
+          
+                      document.getElementById("label").style.color="green";
+                      document.getElementById("label").innerHTML="OTP Verified Successfully";    
+                      location.replace("login.html");
+
+                  }
+                  else{
+                    document.getElementById("label").style.visibility="visible";
+          
+                    document.getElementById("label").style.color="red";     
+                    document.getElementById("label").innerHTML="OTP is incorrect";  
+                    document.getElementById("resend").style.visibility="visible";
+                    
+                  }
+            } */
+           function send_email(email,name)
+           {
+              val=Math.floor(1000+Math.random()*9000); 
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "chiragmodi2207@gmail.com",
+            Password : "Cmodi@2207",
+            To : email,
+            From : "chiragmodi2207@gmail.com",
+            Subject : "OTP verification",
+            Body : `hello  ${name}! <br/> <br/> Your One Time Password (OTP) is: ${val} <br/> <br/> Thank You <br/> NextDoor` ,
+    }).then((message) => alert("OTP Send to your Email ID"));
+           }
+    </script>
+    
+</head>
+
+
+<body>
+
+    <div id="div1">  
+        <img src="images/logo.jpg" id="img" alt=""> 
+     <ul>   
+          
+ 
+         <li id="id2" ><a href="home.jsp"  >Home</a></li>
+         <li id="id3" ><a href="login.html" >Property Services</a></li>
+         <li class="nav-item dropdown" id="id4">
+        <a class="nav-link dropdown-toggle drop" style="position:absolute; top:7px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Customer Service
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="login.html" style="background-color:lightgray; ">Complaint</a>
+          <a class="dropdown-item" href="login.html" style="background-color:lightgray;" >Feedback</a>
+          
+      </li>
+      <li id="id71"> <a href="search.jsp"> Search Property</a>
+         <li id="id5" ><a href="Contactus.html"  >Contact us</a></li>
+         <li id="id6" ><a href="aboutus.html"  >About us</a></li>
+         
+         <li> <a href="login.html" id="li1">Post Property Free</a></li>
+         
+      <li style="position:absolute; left:1200px; top:0px; height:60px; padding-top: 15px;" id="id7" ><a href="Login_Session" >Login   |</a></li>
+         <li style="position:absolute; left:1270px; top:0px; height:60px; padding-top: 15px;" id="id8"  ><a href="Register.html" >SignUp</a></li>
+      
+     </ul>
+    
+ </div>
+   
+   
+    <section class="main-container">
+    
+               	<div class="left-sec">
+               	<h5 Style="color:red"> This Email Id Is already Registered</h5>
+    		<h1>Sign Up</h1>
+        <form action="sub">
+            <input type="text" name="name" placeholder="Your Name" id="name" required>
+            
+    	    <input type="email" name="email" placeholder="Email Id" id="email" required >
+            
+    		<input type="password" name="password" placeholder="Password" id="pword" required> 
+           
+           <input type="submit" value="Sign Up"  style="width:120px; background-color:green;">
+
+        </form>
+    	<br>
+    		<a href="login.html">Allready have an account?</a>
+    
+        </div>
+
+     
+       <div class="right-sec">
+    		<img src="images/home1.jpg" alt="House" >
+    	</div>
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

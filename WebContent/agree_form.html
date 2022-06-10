@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/service1.css">
+<link rel="stylesheet" href="css/home1.css">
+<link rel="stylesheet" href="css/temp1.css">
+
+</head>
+<body>
+
+<div id="div1">  
+        <img src="images/logo.jpg" id="img" alt=""> 
+     <ul>   
+          
+ 
+  <li id="id2" ><a href="main1.jsp"  >Home |</a></li>
+         <li id="id3" style="position: absolute; left:200px;" ><a href="Add_list.html" >Add Listing |</a></li>
+         <li id="id4" style="position: absolute; left:310px;" ><a href="#"  >Customer Services |</a></li>
+         <li id="id71" style="position: absolute; left:490px;"> <a href="Agreement.jsp"> Property Services |</a>
+      <li id="id71" style="position: absolute; left:650px;"> <a href="mylisting.jsp"> My Listings |</a>
+
+         <li id="id5" style="position: absolute; left:760px;" ><a href="myprofile.jsp?e="  >My Account |</a></li>
+          
+         <li onmouseover="this.style.backgroundColor='#a9a9a9'"> <a href="myfavorite.jsp"  id="id56" style=" position:absolute; left:870px; top:15px; ">My Favorites |</a></li>
+         
+       
+      <li style="position:absolute; left:1200px; top:0px; height:60px; padding-top: 15px;" id="id7" ><a href="Signout" >Sign out  </a></li>
+                              
+     </ul>
+    
+ </div>
+ 
+
+			<section class="main-container">
+	    	<form action="agreementService" method="post">
+            <div style="position:relative; top:0px; left:0px; padding-top: 20px; height:100px; background-color: cadetblue;">
+	    	<p style=" margin-top:0px;  font-size: 40px; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">	Service Agreement Form </p>
+            </div>
+
+	    		<div class="content" style="padding-left: 15px;">   
+                    <br> 
+                    <p> Tenant Details* </p>
+                    <br>
+	    			<input class="inp" type="text" name="tname" placeholder="Tenant's Name *">
+                    <input class="inp" type="text" name="temail" placeholder="Tenant's Email ID *">
+                    
+	    			<input class="inp" type="text" name="taddr1" placeholder="Address 1 *">
+	    			<input class="inp" type="text" name="taddr2"  placeholder="Address 2 *">
+	    			<input class="inp" type="text" name="tcity" placeholder="City *">
+                    <input class="inp" type="text" name="tpcode" placeholder="Pincode *">
+
+                    <p> Landlord Details* </p>
+                    <br>
+	    			<input class="inp" type="text" name="lname" placeholder="Landlord's Name *">
+	    			<input class="inp" type="text" name="laddr1" placeholder="Address 1 *">
+	    			<input class="inp" type="text" name="laddr2"  placeholder="Address 2 *">
+	    			<input class="inp" type="text" name="lcity" placeholder="City *">
+                    <input class="inp" type="text" name="lpcode" placeholder="Pincode *">
+
+                    <p> Agreement Details* </p>
+                    <br>
+                    <input class="inp" type="text" name="agreementStartDate" onfocus="(this.type='date')" placeholder="Agreement Start Date *">
+                    <input class="inp" type="number" name="duration" placeholder="Duration in Months *">
+                    <input class="inp" type="number" name="stampAmount" placeholder="Stamp Duty Denomination *">
+	    			
+                     
+	    			
+	    			<h2>Rent Details* </h2>
+	    			<p style="font-weight:normal; font-size: 20px; ">Rent Paid:- </p>
+	    			<input type="radio" name="rentPaid" id="monthly" value="monthly" >
+	    			<label for="monthly" style="font-size: 15px;">Monthly</label>
+	    			<input type="radio"  name="rentPaid" id="quarterly" value="quarterly">
+	    			<label for="quarterly" style="font-size: 15px;">Quarterly</label>
+
+	    			<input style="margin-left: 10.5rem;" class="inp" type="number" name="rentAmount" placeholder="Rent Amount *">
+
+	    			<input class="inp" type="number" name="deposit" placeholder="Security Deposit Amount *">
+	    			
+
+	    			<p style="font-size: 20px;">Paid by:-</p>
+	    			<input type="radio" name="paidType" id="cash" value="cash">
+	    			<label for="cash" style="font-size: 15px;">Cash</label>
+	    			<input type="radio"  name="paidType" id="check" value="check">
+	    			<label for="check" style="font-size: 15px;">Check</label>
+	    		</div>
+
+	    		<button type="submit" >Submit</button>
+
+	    	</form>
+	    </section>
+
+</body>
+</html>

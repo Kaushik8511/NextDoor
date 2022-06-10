@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home1.css">
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides()
+   {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+  	slideIndex++;
+  	if (slideIndex > slides.length) {slideIndex = 1}    
+  	for (i = 0; i < dots.length; i++) {
+    	dots[i].className = dots[i].className.replace(" active", "");
+  	}
+  	slides[slideIndex-1].style.display = "block";  
+  	dots[slideIndex-1].className += " active";
+  	setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+	</script>
+
+
+	</head>
+	<body>
+   	<div id="div1">  
+    	   <img src="images/logo.jpg" style="position:absolute; top:0px; left:0px; height:58px; width:100px;" alt=""> 
+    <ul>   
+         
+
+        <li id="id2"><a href="home.html"  >Home</a></li>
+        <li id="id3" ><a href="#" >Property Services</a></li>
+        <li id="id4" ><a href="#"  >Customer Services</a></li>
+        <li id="id71"> <a href="search.html"> Search Property</a>
+        <li id="id5" ><a href="#"  >Contact us</a></li>
+        <li id="id6" ><a href="#"  >About us</a></li>
+        <li> <a href="#" id="li1">Post Property Free</a></li>
+        
+     	<li style="position:absolute; left:1200px; top:0px; height:60px; padding-top: 15px;" id="id7" ><a href="Login_Session" >Login   |</a></li>
+        <li style="position:absolute; left:1270px; top:0px; height:60px; padding-top: 15px;" id="id8"  ><a href="Register.html" >SignUp</a></li>
+     
+    </ul>
+   
+</div>
+
+<div class="div3">
+
+	    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/img1.jpg" style="width:100%; height:100%;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/img3.jpg" style="width:100%; height:100%;">
+          </div>
+        
+        <div class="mySlides fade">
+          <img src="images/img4.jpg" style="width:100%; height:100%;">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/img5.jpg" style="width:100%; height:100%;">
+            </div>
+          
+          
+        </div>
+        <br>
+        
+        <div style="text-align:center; position: absolute; top:660px; left:650px;">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          
+        </div>
+        
+   <h2 style="position: absolute; top:700px; left:500px;"> Project Gallary- Vadodara </h2>
+
+   <img src="images/rent1.jpg" alt="" style="position:absolute; top:800px; left:20px; width:300px; height:300px" >
+   <img src="images/rent2.jpg" alt="" style="position:absolute; top:800px; left:350px; width:300px; height:300px" >
+   <img src="images/rent3.jpg" alt="" style="position:absolute; top:800px; left:680px; width:300px; height:300px" >
+   <img src="images/rent4.jpg" alt="" style="position:absolute; top:800px; left:1010px; width:300px; height:300px" >
+
+   <div class="info"> <h6> Sarvoday Society </h6>
+         
+         <p> Ajva Road</p> 
+         <p> 3BHK</p>
+         <p> Rent:- 8000 Rs</p>
+         <input type="button" value="See Details">
+   </div>
+   <div class="info"> <h6> Sarvoday Society </h6>
+         
+    <p> Location:- Ajva Road</p> 
+    <p> Type: Flat 3BHK</p>
+    <p> Rent:- 8000 Rs</p>
+    <input type="button" value="See Details">
+</div>
+
+<div class="info" style="position: absolute; top:1100px; left:350px;"> <h6> Green Villa </h6>
+         
+    <p> Location:- Karelibaug</p> 
+    <p> type:- duplex</p>
+    <p> Rent:- 16000 Rs</p>
+    <input type="button" value="See Details">
+</div>
+
+<div class="info" style="position: absolute; top:1100px; left:680px;"> <h6> Infinium </h6>
+         
+    <p> Location:Makarpura</p> 
+    <p> type:Tenament</p>
+    <p> Rent:- 20000 Rs</p>
+    <input type="button" value="See Details">
+</div>
+
+<div class="info" style="position: absolute; top:1100px; left:1010px;"> <h6> Ambika Complex </h6>
+         
+    <p> Location:-Chhani</p> 
+    <p> Type: Shop </p>
+    <p> Rent:- 15000 Rs</p>
+    <input type="button" value="See Details">
+</div>
+
+ <div id="footer">
+
+     <ul style="position: absolute; top:50px; left: 100px; line-height: 200%;">
+
+        <li> <a href="#"> List Your Rental </a> </li>
+        <li> <a href="#"> News </a> </li>
+        <li> <a href="#"> About Us </a> </li>
+        <li> <a href="#"> Contact Us </a> </li>
+
+
+
+     </ul>
+
+     <ul style="position: absolute; top:50px; left: 700px; line-height: 200%;">
+
+        <li> <a href="#"> Term Of Services </a> </li>
+        <li> <a href="#"> Privacy Policy </a> </li>
+        <li> <a href="#"> Avoid Scams and frauds </a> </li>
+        <li> <a href="#"> Do not Sell My Personel information </a> </li>
+
+
+
+     </ul>
+
+     <p style="position: absolute; top:200px; left: 500px; line-height: 200%;"> @ All Rights Reserved 
+     <br>
+     Follow us:
+     <img src="images/facebook.png" style="position: absolute; top:40px; left: 100px; height:20px; width:20px;"> 
+     <img src="images/instagram.png" style="position: absolute; top:40px; left: 130px; height:20px; width:20px;"> 
+    
+     <img src="images/linkedin.png" style="position: absolute; top:40px; left: 160px; height:20px; width:20px;"> 
+    
+     <img src="images/twitter.png" style="position: absolute; top:40px; left: 190px; height:20px; width:20px;"> 
+    
+    </p>
+
+
+
+
+ </div>
+    </div>
+
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+        
+     
+<!--
+<img src="images/gret.jpg" style="position: absolute; top:300px; left: 1200px; border:none; cursor: pointer;">
+<img src="images/less.jpg" style="position: absolute; top:300px; left: 50px; border:none; cursor: pointer;" onclick>
+
+-->
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/login.css">
+    
+    <title>Document</title>
+
+    <script>
+  
+    function myfun()
+    {
+         
+               var e=document.getElementById("e1");
+               if(!e.checkValidity())
+               {
+                     e.style.borderColor="red";
+               }
+
+              e=document.getElementById("p1");
+
+               if(!e.checkValidity())
+               {
+                     e.style.borderColor="red";
+               }
+    }
+    </script>
+</head>
+<body>
+    
+    <div id="div1">  
+        <img src="images/logo.jpg" id="img" alt=""> 
+     <ul>   
+          
+ 
+         <li id="id2" ><a href="home.jsp"  >Home</a></li>
+         <li id="id3" ><a href="login.html" >Property Services</a></li>
+       <li class="nav-item dropdown" id="id4">
+          Customer Services
+       </li>
+        <li id="id71"> <a href="search.jsp"> Search Property</a>
+         <li id="id5" ><a href="Contactus.html"  >Contact us</a></li>
+         <li id="id6" ><a href="aboutus.html"  >About us </a></li>
+         
+         <li> <a href="login.html" id="li1">Post Property Free</a></li>
+         
+      <li style="position:absolute; left:1200px; top:0px; height:45px; padding-top: 15px;" id="id7" ><a href="Login_Session" >Login   |</a></li>
+         <li style="position:absolute; left:1270px; top:0px; height:45px; padding-top: 15px;" id="id8"  ><a href="Register.html" >SignUp</a></li>
+      
+     </ul>
+    
+ </div>
+   
+      <div class="main1">
+
+            <div class="main2">
+                 <fieldset>
+
+                     <legend>
+     
+                     <h1> Log In</h1>
+                    </legend>
+                   
+                    <br> 
+                    <img src="images/home1.jpg" id="img1"> </img>
+                    
+                    <form action="login">
+                    Email ID * <br>
+                    <input type="email" name="email" id="e1" required> 
+                    <br> <br>
+                    Password *
+                    <br>
+                    <input type="password" name="pword" id="p1" required>
+                    <br>
+                    <br>
+                    <input type="submit" value="Log In" id="s1" >
+                    </form>
+                    <br>
+                    <br>
+                    <a href="#" style="color:blue; text-decoration: underline;"> Forget Password?</a>
+                    <br>
+                    <br>
+                    <p> Don't have an account? <a href="Register.html" style="color:blue; text-decoration: underline;"> Sign Up</a></p>
+                
+                     
+  
+  
+  
+                </fieldset>
+                
+                 
+            </div>
+
+      </div>
+
+</body>
+</html>
